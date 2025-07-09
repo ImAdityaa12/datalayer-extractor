@@ -6,10 +6,9 @@ puppeteer.use(StealthPlugin());
 const urls = [
     'https://online.regiscollege.edu/',
     'https://online.regiscollege.edu/online-masters-degrees/',
-    // Add more URLs here
 ];
 
-const CONCURRENCY = 3;
+const CONCURRENCY = urls.length;
 const results = [];
 
 (async () => {
